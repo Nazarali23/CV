@@ -1,0 +1,342 @@
+/*Nazarali Umurkulov 22.11.2025*/
+body,
+footer,
+nav {
+    margin: 0;
+    background-color: #D9EBF8;
+    font-family: Arial, sans-serif;
+}
+
+nav,
+header,
+footer {
+    display: flex;
+}
+
+.line {
+    margin-left: 5%;
+    flex: 0 0 20%;
+    height: auto;
+    background-color: #567CAC;
+    width: max-content;
+    min-width: 160px;
+    margin-right: 5px;
+}
+
+.menu-item {
+    font-size: 100%;
+}
+
+nav p {
+    font-weight: 900;
+    padding: 10px;
+    margin: 20px 5%;
+    white-space: nowrap;
+    color: #080F3B;
+}
+
+nav p:hover {
+    background-color: #ADBBC8;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    height: 79.2px;
+    z-index: 1;
+    border-bottom: 1px solid black;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+main {
+    padding-top: 79.2px;
+}
+
+.other-menu-items {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 5%;
+    gap: 1vw;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #ADBBC8;
+}
+
+header .line {
+    align-items: center;
+    background-color: #829CBA;
+}
+
+.main-about-me {
+    width: 100%;
+    margin: 20px 10px 10px 5%;
+}
+
+header h1 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: #080F3B;
+    margin-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+header h4 {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    color: darkslategray;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    color: darkslategray;
+}
+
+.line img {
+    width: 100%;
+}
+
+.talents {
+    display: flex;
+    flex-direction: row;
+}
+
+.talents h3 {
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 1px solid #ADBBC8;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.talents div:nth-child(2) h3 {
+    text-align: center;
+}
+
+.education h4,
+p {
+    margin: 5px 0;
+    color: rgb(218, 218, 218);
+}
+
+.education div {
+    margin: 40px 10px;
+}
+
+.year {
+    text-align: center;
+    display: block;
+    color: #080F3B;
+    padding: 3px;
+    border-radius: 5px;
+    width: 100px;
+    background-color: #adbbc82b;
+    font-weight: bold;
+}
+
+.hobbies ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    50% {
+        transform: translateY(-20px);
+        box-shadow: 0 25px 35px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.hobbies li {
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 5px;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.5s, box-shadow 0.5s;
+    animation: bounce 2s infinite;
+}
+
+.hobbies li img {
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+.hobbies li.card .card-content {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+    transition: transform 0.5s;
+}
+
+.hobbies li:hover {
+    animation-play-state: paused;
+    transform: scale(1.1);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.6);
+}
+
+.languages {
+    margin-bottom: 20px;
+    padding: 0 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-table th {
+    color: whitesmoke;
+    background-color: #567CAC;
+    height: 40px;
+}
+
+.skill-table:first-child th:first-child {
+    border-start-start-radius: 15px;
+}
+
+.skill-table:last-child th:last-child {
+    border-start-end-radius: 15px;
+}
+
+.skill-table {
+    margin: 0 10px;
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.skill-table th,
+.skill-table td {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 2px solid #ddd;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 14px;
+    background: #e9e9e9;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.skill-bar p {
+    color: #102C5B;
+}
+
+.fill {
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #ADBBC8, #567CAC, #102C5B, #080F3B);
+    transition: width 0.4s ease;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 5%;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+.contact-info a {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+.contact-info a div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info a:hover div {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-info a:nth-child(1) div {
+    background: linear-gradient(90deg, #d18f8f, #dd3b0e);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info a:nth-child(2) div {
+    background: linear-gradient(90deg, #c4bdff, #194792fb);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info a:nth-child(3) div {
+    background: linear-gradient(90deg, #d1d1d1, #000000);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info img {
+    width: 30px;
+}
+
+footer .ref {
+    margin: 5px 10px;
+}
+
+footer div:nth-child(2) {
+    padding: 10px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #ADBBC8;
+}
+
+footer p {
+    color: #080F3B;
+    font-weight: bold;
+}
+
+footer a {
+    display: block;
+    color: #080F3B;
+    text-decoration: none;
+}
+
+footer div:nth-child(2) p {
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
